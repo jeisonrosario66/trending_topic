@@ -21,6 +21,6 @@ for i,tweet in enumerate(sntwitter.TwitterSearchScraper(f'{palabraABuscar} since
 tweets_df = pd.DataFrame(attributes_container, columns=["Usuario", "Tweet"])
 
 # Guarda los datos en un archivo excel
-#tweets_df.to_excel(f'tweets_{palabraABuscar}.xlsx', index=False)
+tweets_df.to_excel(f'tweets_{palabraABuscar}.xlsx', index=False)
 
 print(tweets_df)
